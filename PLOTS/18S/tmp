@@ -1,0 +1,17 @@
+# absrho    true
+# criterion CIC
+# eff_N     100
+# eff_var   2.2059387569083923e-05
+# gain      1
+# maxorder  99
+# minorder  0
+# mu        0.051969972315380975
+# mu_sigma  0.00046967422293632343
+# N         100
+# AR(p)     0
+# sigma2eps 2.1838793693393082e-05
+# sigma2x   2.1838793693393082e-05
+# submean   true
+# T0        1
+# window_T0 1
++1
