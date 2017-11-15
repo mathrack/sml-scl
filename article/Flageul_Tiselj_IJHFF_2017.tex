@@ -120,7 +120,7 @@ Scalar field & $Nx*Ny*Nz$ & $\Delta_x^+$ & $\left[{\Delta_y^+}_{,min},{\Delta_y^
 \end{center}
 \end{table}
 
-In the present study, the resolution requirement for the passive scalar field is examined with a single DNS run. The velocity field is calculated on the finest grid of $Nx*Ny*Nz = 360*181*180$ modes (Case 6S in Table \ref{tb-resolution}). Six distinct passive scalar fields are {\color{red}simultaneously} transported by this velocity field and resolved with different number of modes, see Table \ref{tb-resolution}. {\color{red} The naming scheme for the passive scalar fields is inspired by the name of the authors who promoted certain resolution. For instance, in 1KMM, KMM stands for Kim, Moser and Moin \cite{kim1987turbulence}. Similarly, in 4VK, VK stands for Vreman and Kuerten \citep{vreman2014comparison}. The number preceding the letters corresponds to a disputable ranking of the grids: 1 for the coarsest, 6 for the finest.} For the five scalar fields resolved with a lower resolution, all Fourier and Chebyshev modes above the indicated resolution are set to zero at the end of each time step.
+In the present study, the resolution requirement for the passive scalar field is examined with a single DNS run. The velocity field is calculated on the finest grid of $Nx*Ny*Nz = 360*181*180$ modes (Case 6S in Table \ref{tb-resolution}). Six distinct passive scalar fields are {\color{red}simultaneously} transported by this velocity field and resolved with different number of modes, see Table \ref{tb-resolution}. {\color{red} The naming scheme for the passive scalar fields is inspired by the name of the authors who promoted certain resolution. For instance, in 1KMM, KMM stands for Kim, Moser and Moin \cite{kim1987turbulence}. Similarly, in 4VK, VK stands for Vreman and Kuerten \citep{vreman2014comparison}. The number preceding the letters corresponds to a ranking of the grids: 1 for the coarsest, 6 for the finest.} For the five scalar fields resolved with a lower resolution, all Fourier and Chebyshev modes above the indicated resolution are set to zero at the end of each time step.
 
 This approach, {\color{red}which is comparable to the one in Brethouwer et al. \cite{brethouwer2003micro} or Gotoh et al. \cite{gotoh2012spectral}},  reduces the statistical variability and eases the separation of the sampling error from the error induced by a coarser spatial resolution. The separation of statistical uncertainty and resolution effects is of particular importance for the present work: the smaller extension of the domain in the homogeneous directions increases the sampling error, which easily exceeds the tiny differences induced by the variable resolution of the passive scalar field, except for simulations with a very long duration.
 
@@ -261,39 +261,39 @@ The symmetric positive semi-definite tensors investigated here are related to th
 \begin{figure}[htbp]
 \begin{center}
 \begin{tabular}{cc}
-\includegraphics[width=0.5\textwidth]{../data/diss.pdf} & 
-\includegraphics[width=0.5\textwidth]{../data/dissa.pdf}
+\includegraphics[width=\textwidth]{../data/diss.pdf} \\
+\includegraphics[width=\textwidth]{../data/dissa.pdf}
 \end{tabular}
 \end{center}
-\caption{Dissipation rate $\overline{\epst}$ (left) and barycentric map associated with $\overline{\overline{\partial \theta}}$ (right).}
+\caption{Dissipation rate $\overline{\epst}$ (top) and barycentric map associated with $\overline{\overline{\partial \theta}}$ (bottom).}
 \label{fig-diss}
 \end{figure}
 
-The {\color{red} left frame of} Figure \ref{fig-diss} is in agreement with Table \ref{tb-error}; the profiles of $\epst$ do not show any significant impact of {\color{red}unresolved} smaller scales in 1KMM and 3S results. The situation is similar for the barycentric map of the anisotropy of $\overline{\overline{\partial \theta}}$ ({\color{red} right frame of} Figure \ref{fig-diss}). Due to the imposed temperature at the wall, the anisotropy at the boundary has only one component (limiting state 1C). Then, the closer to the middle of the channel, the closer to isotropy (limiting state 3C).
+The {\color{red} top frame of} Figure \ref{fig-diss} is in agreement with Table \ref{tb-error}; the profiles of $\epst$ do not show any significant impact of {\color{red}unresolved} smaller scales in 1KMM and 3S results. The situation is similar for the barycentric map of the anisotropy of $\overline{\overline{\partial \theta}}$ ({\color{red} bottom frame of} Figure \ref{fig-diss}). Due to the imposed temperature at the wall, the anisotropy at the boundary has only one component (limiting state 1C). Then, the closer to the middle of the channel, the closer to isotropy (limiting state 3C).
 
-{\color{red} Focusing on the left frame of Figure \ref{fig-diss}, one may notice that the profiles of $\epst$ are not exactly symetric. This is not an issue here as this is well within the sampling error, which is around $10\%$ for $\epst$, according to Figure \ref{fig-coarse}. However, performing a simulation with a duration long enough to have a negligible sampling error, one may obtain a profile that still lacks symetry. This is specific to the combination of smaller domains and periodicity used here: global mixing between the lower and upper half of the domain is not perfect due to the absence of large scale structures.}
+{\color{red} Focusing on the top frame of Figure \ref{fig-diss}, one may notice that the profiles of $\epst$ are not exactly symetric. This is not an issue here as this is well within the sampling error, which is around $10\%$ for $\epst$, according to Figure \ref{fig-coarse}. However, performing a simulation with a duration long enough to have a negligible sampling error, one may obtain a profile that still lacks symetry. This is specific to the combination of smaller domains and periodicity used here: global mixing between the lower and upper half of the domain is not perfect due to the absence of large scale structures.}
 
 \begin{figure}[htbp]
 \begin{center}
 \begin{tabular}{cc}
-\includegraphics[width=0.5\textwidth]{../data/var_diss.pdf} & 
-\includegraphics[width=0.5\textwidth]{../data/var_dissa.pdf}
+\includegraphics[width=\textwidth]{../data/var_diss.pdf} \\
+\includegraphics[width=\textwidth]{../data/var_dissa.pdf}
 \end{tabular}
 \end{center}
-\caption{$95 \%$ confidence interval of the variance of the dissipation rate $\epst$ (left) and barycentric map associated with $\sigma_{\overline{\overline{\partial \theta}}}$ (right).}
+\caption{$95 \%$ confidence interval of the variance of the dissipation rate $\epst$ (top) and barycentric map associated with $\sigma_{\overline{\overline{\partial \theta}}}$ (bottom).}
 \label{fig-var_diss}
 \end{figure}
 
-{\color{red} The left frame of} Figure \ref{fig-var_diss} is also in agreement with Table \ref{tb-error}; the variance of $\epst$ is significantly impacted by {\color{red}unresolved} smaller scales, and the coarsest grid underestimates this quantity, especially outside of the viscous sublayer where the discretization error is as large as the sampling error. Closer to the wall, this impact is less visible and all spatial resolutions produce a similar variance of $\epst$. The barycentric map of the anisotropy of $\sigma_{\overline{\overline{\partial \theta}}}$ also shows the impact of {\color{red}unresolved} smaller scales. In the middle of the channel {\color{red}($y=0$)}, the coarsest grid gives a similar weighting for all limiting states (1C, 2C and 3C), this correspond to the part of 1KMM closer to the middle of the triangle. At this location of the channel {\color{red}($y=0$)}, finer grids give a similar weighting only for the limiting states 1C and 3C, but a negligible weight to state 2C, this correspond to the part of 6S and 3S closer to the edge connecting 1C and 3C.
+{\color{red} The top frame of} Figure \ref{fig-var_diss} is also in agreement with Table \ref{tb-error}; the variance of $\epst$ is significantly impacted by {\color{red}unresolved} smaller scales, and the coarsest grid underestimates this quantity, especially outside of the viscous sublayer where the discretization error is as large as the sampling error. Closer to the wall, this impact is less visible and all spatial resolutions produce a similar variance of $\epst$. The barycentric map of the anisotropy of $\sigma_{\overline{\overline{\partial \theta}}}$ also shows the impact of {\color{red}unresolved} smaller scales. In the middle of the channel {\color{red}($y=0$)}, the coarsest grid gives a similar weighting for all limiting states (1C, 2C and 3C), this correspond to the part of 1KMM closer to the middle of the triangle. At this location of the channel {\color{red}($y=0$)}, finer grids give a similar weighting only for the limiting states 1C and 3C, but a negligible weight to state 2C, this correspond to the part of 6S and 3S closer to the edge connecting 1C and 3C.
 
 \begin{figure}[htbp]
 \begin{center}
 \begin{tabular}{cc}
-\includegraphics[width=0.5\textwidth]{../data/x4.pdf} & 
-\includegraphics[width=0.5\textwidth]{../data/z4.pdf}
+\includegraphics[width=\textwidth]{../data/x4.pdf} \\ 
+\includegraphics[width=\textwidth]{../data/z4.pdf}
 \end{tabular}
 \end{center}
-\caption{Spectra of the streamwise (left) and spanwise (right) contributions to the scalar dissipation rate $\epst$ at $y=0$ (middle of the channel).}
+\caption{Spectra of the streamwise (top) and spanwise (bottom) contributions to the scalar dissipation rate $\epst$ at $y=0$ (middle of the channel).}
 \label{fig-spec}
 \end{figure}
 
@@ -311,7 +311,7 @@ Integral quantities provide only a limited amount of information and spectra in 
 \label{fig-visu}
 \end{figure}
 
-Figure \ref{fig-visu} illustrates the impact of the under-resolution on the gradient of the scalar. On the one hand, both fields exhibit similar structures at larger scales, in agreement with the ability of the grid 1KMM to estimate the average {\color{red}scalar} dissipation rate, as shown in Figure 2. On the other hand, smaller scales are visibly misrepresented on the coarser grid, as the picture on the left is plagued by the oscillations, which correspond to the wavenumbers of around $k^+=0.2$ that are overpredicted in 1KMM results shown in {\color{red}the left frame of} Figure \ref{fig-spec}. This is consistent with the previous results: the grid 1KMM is too coarse to properly resolve the sharp gradients which separate dissipative and non-dissipative regions.
+Figure \ref{fig-visu} illustrates the impact of the under-resolution on the gradient of the scalar. On the one hand, both fields exhibit similar structures at larger scales, in agreement with the ability of the grid 1KMM to estimate the average {\color{red}scalar} dissipation rate, as shown in Figure 2. On the other hand, smaller scales are visibly misrepresented on the coarser grid, as the picture on the left is plagued by the oscillations, which correspond to the wavenumbers of around $k^+=0.2$ that are overpredicted in 1KMM results shown in {\color{red}the top frame of} Figure \ref{fig-spec}. This is consistent with the previous results: the grid 1KMM is too coarse to properly resolve the sharp gradients which separate dissipative and non-dissipative regions.
 
 \section{Conclusion}
 
