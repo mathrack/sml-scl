@@ -1,3 +1,8 @@
+##################################################################
+# Flageul and Tiselj
+# https://doi.org/10.1016/j.ijheatfluidflow.2017.10.009
+##################################################################
+
 from numpy import *
 from pylab import *
 import xlrd
